@@ -6,37 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slug Gaming</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+    
 </head>
 
-<body class="bg-gray-900">
+<body class="bg-gray-900 font-montserrat">
     <div class="fixed-container mt-4">
         <!-- Navigation Bar -->
         <div class="mx-auto my-auto">
             <div class="flex justify-between items-center h-16 mb-3 ml-8 mr-4">
                 <div class="flex">
                     <img src="Images/SlugLogo.png" alt="Slug" class="w-20 h-22 mr-2">
-                    <a href="index.html" style="color: #FFCC04;" class="font-montserrat text-2xl font-bold uppercase mt-5">Slug
+                    <a href="index.html" style="color: #FFCC04;" class="text-2xl font-bold uppercase mt-5 transition-colors">Slug
                         Gaming</a>
                 </div>
                 <div class="flex items-center gap-x-8">
-                    <a href="about.html" class="text-white text-2xl font-bold uppercase hover:text-yellow-400">About</a>
-                    <a href="games.html" class="text-white text-2xl font-bold uppercase hover:text-yellow-400">Staff</a>
-                    <a href="staff.html" class="text-white text-2xl font-bold uppercase hover:text-yellow-400">Contact</a>
-                    <a href="jobs.html" class="text-white text-2xl font-bold uppercase hover:text-yellow-400">Jobs</a>
+                    <a href="about.html" class="text-white text-2xl font-bold uppercase hover:text-yellow-400 transition-colors">About</a>
+                    <a href="games.html" class="text-white text-2xl font-bold uppercase hover:text-yellow-400 transition-colors">Staff</a>
+                    <a href="staff.html" class="text-white text-2xl font-bold uppercase hover:text-yellow-400 transition-colors">Contact</a>
+                    <a href="jobs.html" class="text-white text-2xl font-bold uppercase hover:text-yellow-400 transition-colors">Jobs</a>
                     <div class="relative">
                         <div class="flex items-center">
-                            <a id="teams-btn" href="#" class="text-white text-2xl font-bold uppercase hover:text-yellow-400">Teams</a>
-                            <svg id="teams-icon" class="w-4 h-4 text-white ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <a id="teams-btn" href="#" class="text-white text-2xl font-bold uppercase hover:text-yellow-400 transition-colors">Teams</a>
+                            <svg id="teams-icon" class="w-4 h-4 text-white ml-1 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </div>
-                        <div id="teams-menu" class="absolute bg-gray-900 mt-2 py-2 w-40 z-10 right-0 hidden rounded-lg shadow-lg border-2 border-yellow-400">
-                            <a href="leagueoflegends.html" class="block text-white hover:bg-gray-800 hover:text-yellow-400 px-4 py-2">League of Legends</a>
-                            <a href="valorant.html" class="block text-white hover:bg-gray-800 hover:text-yellow-400 px-4 py-2">Valorant</a>
-                            <a href="overwatch.html" class="block text-white hover:bg-gray-800 hover:text-yellow-400 px-4 py-2">Overwatch</a>
-                            <a href="apexlegends.html" class="block text-white hover:bg-gray-800 hover:text-yellow-400 px-4 py-2">Apex Legends</a>
-                            <a href="rocketleague.html" class="block text-white hover:bg-gray-800 hover:text-yellow-400 px-4 py-2">Rocket League</a>
-                            <a href="callofduty.html" class="block text-white hover:bg-gray-800 hover:text-yellow-400 px-4 py-2">Call of Duty</a>
+                        <div id="teams-menu" class="absolute bg-gray-900 mt-2 py-2 w-44 z-10 right-0 hidden shadow-lg border-2 border-yellow-400">
+                            <a href="leagueoflegends.html" class="block text-white hover:bg-gray-800 hover:text-yellow-400 px-4 py-2 transition-colors">League of Legends</a>
+                            <a href="valorant.html" class="block text-white hover:bg-gray-800 hover:text-yellow-400 px-4 py-2 transition-colors">Valorant</a>
+                            <a href="overwatch.html" class="block text-white hover:bg-gray-800 hover:text-yellow-400 px-4 py-2 transition-colors">Overwatch</a>
+                            <a href="apexlegends.html" class="block text-white hover:bg-gray-800 hover:text-yellow-400 px-4 py-2 transition-colors">Apex Legends</a>
+                            <a href="rocketleague.html" class="block text-white hover:bg-gray-800 hover:text-yellow-400 px-4 py-2 transition-colors">Rocket League</a>
+                            <a href="callofduty.html" class="block text-white hover:bg-gray-800 hover:text-yellow-400 px-4 py-2 transition-colors">Call of Duty</a>
                         </div>
                     </div>
                 </div>
@@ -59,13 +66,13 @@
         </div>
         <!-- Text -->
         <div class="flex flex-col items-start gap-30 flex-1">
-            <h2 style="color: #FFCC04;" class="font-montserrat text-4xl font-bold ml-8 mb-10">MASSIVE LIVE EVENTS</h2>
+            <h2 style="color: #FFCC04;" class="text-4xl font-bold ml-8 mr-8 mb-10">MASSIVE LIVE EVENTS</h2>
             <div class="ml-8 md:ml-8 mr-8">
-                <p class="text-white font-montserrat text-lg font-bold leading-loose capitalize">
+                <p class="text-white text-lg font-bold leading-loosecapitalize font-montserrat">
                     Join us at one of our viewing parties, firebase tours, or Social Gaming In-Houses! You can check in
                     with our calendar here to find out when the next event is happening.
                 </p>
-                <p class="text-white font-montserrat text-lg font-bold font-italic mt-10">
+                <p class="text-white text-lg font-bold font-italic mt-10">
                     <em>"Wow, this stadium is so big."</em>
                     <br>
                     - Jordan "Subtact" Kinard
@@ -82,14 +89,14 @@
         </div>
         <!-- Text -->
         <div class="flex flex-col items-start gap-30 flex-1">
-            <h2 style="color: #FFCC04;" class="font-montserrat text-4xl font-bold ml-8 mb-10">A WELCOMING COMMUNITY</h2>
+            <h2 style="color: #FFCC04;" class="text-4xl font-bold ml-8 mr-8 mb-10">A WELCOMING COMMUNITY</h2>
             <div class="ml-8 md:ml-8 mr-8">
-                <p class="text-white font-montserrat text-lg font-bold leading-loose capitalize">
+                <p class="text-white text-lg font-bold leading-loose capitalize font-montserrat">
                     Mentors, mentees, we're all here to have as much fun as possible and help each other with both in
                     video games and out. Read more about us <a href="about.html"
                         class="text-yellow-400 underline">Here</a>.
                 </p>
-                <p class="text-white font-montserrat text-lg font-bold font-italic mt-10">
+                <p class="text-white text-lg font-bold font-italic mt-10">
                     <em>"Maybe you should go back to Jayce."</em>
                     <br>
                     - Tyson "Fleche" Van
@@ -106,15 +113,15 @@
         </div>
         <!-- Text -->
         <div class="flex flex-col items-start gap-30 flex-1">
-            <h2 style="color: #FFCC04;" class="font-montserrat text-4xl font-bold ml-8 mb-10">SWAGALICIOUS GIVEAWAYS
+            <h2 style="color: #FFCC04;" class="text-4xl font-bold ml-8 mr-8 mb-10">SWAGALICIOUS GIVEAWAYS
             </h2>
             <div class="ml-8 md:ml-8 mr-8">
-                <p class="text-white font-montserrat text-lg font-bold leading-loose capitalize">
+                <p class="text-white text-lg font-bold leading-loose capitalize font-montserrat">
                     We have FREE swag and merch giveaways pretty often. Join our <a
                         href="https://discord.com/invite/GKQdtHf32t" class="text-yellow-400 underline">discord</a>
                     server to learn more!
                 </p>
-                <p class="text-white font-montserrat text-lg font-bold font-italic mt-10">
+                <p class="text-white text-lg font-bold font-italic mt-10">
                     <em>"So we can have more than 3 of these cups?"</em>
                     <br>
                     - Jason "Radastorm2" Yang
