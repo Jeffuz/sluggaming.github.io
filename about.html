@@ -38,24 +38,26 @@
                 <div id="menu" class="hidden lg:flex items-center gap-x-8">
                     <a href="about.html"
                         class="text-white text-2xl font-bold uppercase hover:text-yellow-400 transition-colors">About</a>
-                    <a href="games.html"
-                        class="text-white text-2xl font-bold uppercase hover:text-yellow-400 transition-colors">Staff</a>
                     <a href="staff.html"
+                        class="text-white text-2xl font-bold uppercase hover:text-yellow-400 transition-colors">Staff</a>
+                    <a href="contact.html"
                         class="text-white text-2xl font-bold uppercase hover:text-yellow-400 transition-colors">Contact</a>
                     <a href="jobs.html"
                         class="text-white text-2xl font-bold uppercase hover:text-yellow-400 transition-colors">Jobs</a>
                     <div class="relative">
                         <div class="flex items-center">
                             <button id="teams-btn"
-                                class="text-white text-2xl font-bold uppercase hover:text-yellow-400 focus:outline-none">Teams</button>
-                            <svg id="teams-icon" class="w-4 h-4 text-white ml-1 transition-transform"
+                                class="text-white text-2xl font-bold uppercase hover:text-yellow-400 focus:outline-none">Teams
+                                ↓</button>
+                            <!-- <svg id="teams-icon" class="w-4 h-4 text-white ml-1 transition-transform"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M19 9l-7 7-7-7"></path>
-                            </svg>
+                            </svg> -->
                         </div>
-                        <div id="teams-menu" class="hidden bg-gray-900 mt-2 w-44 py-2 right-0 absolute">
+                        <div id="teams-menu"
+                            class="hidden bg-gray-900 mt-2 w-44 py-2 right-0 absolute border-yellow-400 border">
                             <a href="leagueoflegends.html"
                                 class="block text-white hover:bg-gray-800 hover:text-yellow-400 px-4 py-2 transition-colors">League
                                 of Legends</a>
@@ -76,27 +78,70 @@
                     </div>
                 </div>
             </div>
+            <!-- Dropdown Menu -->
+            <div id="dropdown-menu" class="hidden lg:hidden bg-gray-900">
+                <a href="about.html"
+                    class="block text-white text-2xl font-bold uppercase hover:bg-gray-800 px-4 py-2 transition-colors">ABOUT</a>
+                <a href="staff.html"
+                    class="block text-white text-2xl font-bold uppercase hover:bg-gray-800 px-4 py-2 transition-colors">STAFF</a>
+                <a href="contact.html"
+                    class="block text-white text-2xl font-bold uppercase hover:bg-gray-800 px-4 py-2 transition-colors">CONTACT</a>
+                <a href="jobs.html"
+                    class="block text-white text-2xl font-bold uppercase hover:bg-gray-800 px-4 py-2 transition-colors">JOBS</a>
+                <a href="#"
+                    class="block text-white text-2xl font-bold uppercase hover:bg-gray-800 px-4 py-2 transition-colors">TEAMS
+                    ↓</a>
+            </div>
+
+            <!-- Second Dropdown Menu -->
+            <div id="second-dropdown-menu" class="hidden lg:hidden bg-gray-800">
+                <a href="leagueoflegends.html" class="block text-white hover:bg-gray-700 px-4 py-2 transition-colors">League of Legends</a>
+                <a href="valorant.html" class="block text-white hover:bg-gray-700 px-4 py-2 transition-colors">Valorant</a>
+                <a href="overwatch.html" class="block text-white hover:bg-gray-700 px-4 py-2 transition-colors">Overwatch</a>
+                <a href="apexlegends.html" class="block text-white hover:bg-gray-700 px-4 py-2 transition-colors">Apex Legends</a>
+                <a href="rocketleague.html" class="block text-white hover:bg-gray-700 px-4 py-2 transition-colors">Rocket League</a>
+                <a href="callofduty.html" class="block text-white hover:bg-gray-700 px-4 py-2 transition-colors">Call of Duty</a>
+            </div>
             <img src="Images/Navigator Divide.png" alt="Navigator Divide">
         </div>
-        <!-- Rest of your code... -->
+    </div>
 
-        <script>
-            // Teams Menu Toggle
-            document.getElementById("teams-btn").addEventListener("click", function () {
-                document.getElementById("teams-menu").classList.toggle("hidden");
-            });
+    <!-- Rest of your code... -->
 
-            document.addEventListener("click", function (event) {
-                var teamsMenu = document.getElementById("teams-menu");
-                var teamsBtn = document.getElementById("teams-btn");
-                var teamsIcon = document.getElementById("teams-icon");
+    <script>
+        // Hamburger Menu Toggle
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            document.getElementById("dropdown-menu").classList.toggle("hidden");
+        });
 
-                if (event.target !== teamsBtn && !teamsMenu.contains(event.target)) {
-                    teamsMenu.classList.add("hidden");
-                    teamsIcon.classList.remove("rotate-180");
-                }
-            });
-        </script>
+        // Teams Menu Toggle
+        document.getElementById("teams-btn").addEventListener("click", function () {
+            document.getElementById("teams-menu").classList.toggle("hidden");
+        });
+
+        // Second Dropdown Menu Toggle (when clicking on "TEAMS")
+        document.getElementById("dropdown-menu").addEventListener("click", function (event) {
+            if (event.target.innerText === "TEAMS ↓") {
+                document.getElementById("second-dropdown-menu").classList.toggle("hidden");
+            }
+        });
+
+        document.addEventListener("click", function (event) {
+            var teamsMenu = document.getElementById("teams-menu");
+            var teamsBtn = document.getElementById("teams-btn");
+            var teamsIcon = document.getElementById("teams-icon");
+            var secondDropdownMenu = document.getElementById("second-dropdown-menu");
+
+            if (event.target !== teamsBtn && !teamsMenu.contains(event.target)) {
+                teamsMenu.classList.add("hidden");
+                teamsIcon.classList.remove("rotate-180");
+            }
+
+            if (event.target.innerText !== "TEAMS ↓" && !secondDropdownMenu.contains(event.target)) {
+                secondDropdownMenu.classList.add("hidden");
+            }
+        });
+    </script>
 </body>
 
 </html>
