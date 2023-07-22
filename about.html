@@ -25,10 +25,15 @@
         body::-webkit-scrollbar-track {
             background-color: #1F2937;
         }
+
+        /* Gradient */
+        .bg-gradient-to-r {
+            background: linear-gradient(to right, #1F2937, #1A202C);
+        }
     </style>
 </head>
 
-<body class="bg-black font-montserrat" style="overflow-y: scroll;">
+<body class="bg-gray-700 font-montserrat" style="overflow-y: scroll;">
     <div class="fixed-container fixed top-0 left-0 right-0 z-50 bg-gray-900">
         <!-- Navigation Bar -->
         <div class="mx-auto my-auto">
@@ -127,6 +132,59 @@
     </div>
 
     <!-- Rest of your code... -->
+
+    <!-- Mission/Values -->
+    <div class="flex flex-col md:flex-row bg-gradient-to-r from-blue-900 to-blue-800 p-8 mt-32 mx-10 rounded-lg">
+        <div class="flex-1 text-white">
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold">Our Mission</h2>
+                <p class="text-lg leading-loose">Slug Gaming is a community-driven organization offering unique
+                    opportunities for esports enthusiasts, including a competitive environment for talent development,
+                    industry connections, and a thriving casual scene that welcomes everyone to be part of our family.
+                </p>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold">Our Vision</h2>
+                <p class="text-lg leading-loose">Our vision at Slug Gaming is to become the premier gaming club, known
+                    for its exceptional gaming experiences and community engagement. We aspire to create a space where
+                    gamers come together to share their passion, forge lasting friendships, and explore the limitless
+                    possibilities of gaming.</p>
+            </div>
+        </div>
+
+        <div class="flex-1 flex justify-center items-center">
+            <img src="Images/img-vision.png" alt="Slug Gaming Image" class="w-100 h-80">
+        </div>
+    </div>
+
+    <!-- General Meetings -->
+    <div class="flex flex-col md:flex-row bg-gradient-to-r from-blue-900 to-blue-800 p-8 mt-10 mx-10 rounded-lg">
+        <img src="Images/generalmeetings.png" alt="General Meetings Image"
+            class="w-full h-auto md:w-96 mb-6 md:mr-8 md:mb-0">
+        <div class="text-white flex flex-col justify-center">
+            <h2 class="text-3xl font-bold">GENERAL MEETINGS</h2>
+            <p class="text-lg leading-loose">Join Slug Gaming's monthly meetings to discuss upcoming events like
+                in-house gaming sessions, competitive team tryouts, thrilling tournaments, and more! Stay informed,
+                get involved, and contribute to our vibrant gaming community.</p>
+        </div>
+    </div>
+
+    <!-- Club Inhouses -->
+    <div class="flex flex-col md:flex-row bg-gradient-to-r from-blue-900 to-blue-800 p-8 mt-10 mx-10 rounded-lg">
+        <img src="Images/inHouse.jpg" alt="General Meetings Image"
+            class="w-full h-auto md:w-96 mb-6 md:mr-8 md:mb-0">
+        <div class="text-white flex flex-col justify-center">
+            <h2 class="text-3xl font-bold">CLUB IN-HOUSES</h2>
+            <p class="text-lg leading-loose">Join Slug Gaming's Club In-Houses for casual gaming sessions in a dedicated
+                room, connecting with fellow gamers, making friends, and showcasing your skills. Check our Event
+                Calendar for upcoming gatherings, games, meetings, and tournaments. All players, whether seasoned or
+                new, are welcome for an unforgettable gaming experience.
+                <br><br>
+                See you there!
+            </p>
+        </div>
+    </div>
+
     <img class="mt-24" src="Images/Navigator Divide.png" alt="Navigator Divide">
 
     <!-- Footer -->
