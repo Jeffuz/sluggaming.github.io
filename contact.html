@@ -11,10 +11,24 @@
         .font-montserrat {
             font-family: 'Montserrat', sans-serif;
         }
+
+        /* Scroll Bar */
+        body::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: #FFCC04;
+            border-radius: 6px;
+        }
+
+        body::-webkit-scrollbar-track {
+            background-color: #1F2937;
+        }
     </style>
 </head>
 
-<body class="bg-black font-montserrat">
+<body class="bg-black font-montserrat" style="overflow-y: scroll;">
     <div class="fixed-container fixed top-0 left-0 right-0 z-50 bg-gray-900">
         <!-- Navigation Bar -->
         <div class="mx-auto my-auto">
@@ -113,6 +127,49 @@
     </div>
 
     <!-- Rest of your code... -->
+    <img class="mt-24" src="Images/Navigator Divide.png" alt="Navigator Divide">
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-4">
+            <div class="my-8 flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center">
+                    <img src="images/slugLogo.png" alt="Slug Gaming Logo" class="w-32 h-30 mr-2">
+                    <div class="text-white">
+                        <p class="text-2xl font-bold">Slug Gaming</p>
+                        <p class="text-lg">UC Santa Cruz</p>
+                        <p class="text-sm">EST. 2017</p>
+                    </div>
+                </div>
+                <div class="text-white">
+                    <p class="text-sm mb-4">Connect With Us</p>
+                    <div class="flex gap-x-4 items-center"> <!-- Updated this line -->
+                        <a href="https://www.youtube.com/@sluggaming114" class="text-white">
+                            <img src="https://static-00.iconduck.com/assets.00/youtube-round-2-icon-512x512-pd38fjru.png"
+                                alt="YouTube" class="w-8 h-8" />
+                        </a>
+                        <a href="https://www.tiktok.com/@sluggamingucsc?ug_source=op.auth&ug_term=Linktr.ee&utm_source=awyc6vc625ejxp86&utm_campaign=tt4d_profile_link&_r=1"
+                            class="text-white">
+                            <img src="https://static-00.iconduck.com/assets.00/tiktok-icon-473x512-jgle91gd.png"
+                                alt="TikTok" class="w-8 h-8" />
+                        </a>
+                        <a href="https://twitter.com/sluggamingucsc?lang=en" class="text-white">
+                            <img src="https://static-00.iconduck.com/assets.00/twitter-round-icon-512x511-th1fc8ut.png"
+                                alt="Twitters" class="w-8 h-8" />
+                        </a>
+                        <a href="https://www.instagram.com/sluggamingucsc/?hl=en" class="text-white">
+                            <img src="https://static-00.iconduck.com/assets.00/instagram-1-icon-512x512-vtcaw64p.png"
+                                alt="Instagrams" class="w-8 h-8" />
+                        </a>
+                        <a href="https://discord.com/invite/GKQdtHf32t" class="text-white">
+                            <img src="https://static-00.iconduck.com/assets.00/discord-icon-512x512-frbs14rr.png"
+                                alt="Discord" class="w-8 h-8" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script>
         // Hamburger Menu Toggle
         document.getElementById("menu-toggle").addEventListener("click", function () {
